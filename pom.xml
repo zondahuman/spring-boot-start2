@@ -12,6 +12,7 @@
         <module>spring-boot-mybatis-annotation</module>
         <module>spring-boot-common</module>
         <module>spring-boot-mybatis-xml</module>
+        <module>spring-boot-profiles</module>
     </modules>
 
 
