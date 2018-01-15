@@ -13,6 +13,7 @@
         <module>spring-boot-common</module>
         <module>spring-boot-mybatis-xml</module>
         <module>spring-boot-profiles</module>
+        <module>spring-boot-jpa-thymeleaf</module>
     </modules>
 
 
