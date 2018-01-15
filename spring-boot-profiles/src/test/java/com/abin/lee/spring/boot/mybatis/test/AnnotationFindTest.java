@@ -21,7 +21,8 @@ import java.util.List;
  */
 public class AnnotationFindTest {
 
-    private static final String httpURL = "http://localhost:8080/findById";
+//    private static final String httpURL = "http://localhost:8080/findById";
+    private static final String httpURL = "http://localhost:8099/findById";
 
     @Test
     public void testAnnotationFind() {
