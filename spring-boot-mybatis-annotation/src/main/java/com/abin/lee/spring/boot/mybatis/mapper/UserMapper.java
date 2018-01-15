@@ -29,10 +29,10 @@ public interface UserMapper {
     })
     UserEntity getOne(Long id);
 
-    @Insert("INSERT INTO users(userName,passWord,user_sex) VALUES(#{userName}, #{passWord}, #{userSex})")
+    @Insert("INSERT INTO users(userName,passWord,user_sex,nick_name) VALUES(#{userName}, #{passWord}, #{userSex}, #{nickName})")
     void insert(UserEntity user);
 
-    @Update("UPDATE users SET userName=#{userName},nick_name=#{nickName} WHERE id =#{id}")
+    @Update("UPDATE users SET userName=#{userName},passWord=#{passWord}, user_sex=#{userSex}, nick_name=#{nickName} WHERE id =#{id}")
     void update(UserEntity user);
 
     @Delete("DELETE FROM users WHERE id =#{id}")
