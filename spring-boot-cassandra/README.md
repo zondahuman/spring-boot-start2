@@ -23,7 +23,7 @@ apache-cassandra-3.11.1
 # Table Data Type :
 http://docs.datastax.com/en/archived/cql/3.0/cql/cql_reference/create_table_r.html
 
-
+http://blog.csdn.net/codeforjesus/article/details/53337317
 
 
 
