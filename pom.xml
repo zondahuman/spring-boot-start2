@@ -19,6 +19,7 @@
         <module>spring-boot-mongodb</module>
         <module>spring-boot-multi-mongodb</module>
         <module>spring-boot-mail</module>
+        <module>spring-boot-cassandra</module>
     </modules>
 
 
