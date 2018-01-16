@@ -1,0 +1,16 @@
+server:
+      port: 8090  #配置端口
+      address : localhost
+      session-timeout: 30
+      tomcat.max-threads: 0
+      tomcat.uri-encoding: UTF-8
+
+mongodb:
+          primary:
+                      host: 172.16.2.132
+                      port: 27017
+                      database: test
+          secondary:
+                      host: 172.16.2.133
+                      port: 27017
+                      database: test1

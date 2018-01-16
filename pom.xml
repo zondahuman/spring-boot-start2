@@ -16,6 +16,8 @@
         <module>spring-boot-jpa-thymeleaf</module>
         <module>spring-boot-mybatis-mulidatasource</module>
         <module>spring-boot-mybatis-annotation-mulidatasource</module>
+        <module>spring-boot-mongodb</module>
+        <module>spring-boot-multi-mongodb</module>
     </modules>
 
 

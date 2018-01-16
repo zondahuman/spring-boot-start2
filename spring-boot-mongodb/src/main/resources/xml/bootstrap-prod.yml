@@ -1,0 +1,13 @@
+
+spring :
+      application :
+          name : spirng-boot-mongodb
+      data :
+          mongodb :
+              uri : mongodb://172.16.2.133:27017/trade
+
+
+
+
+
+
