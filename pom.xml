@@ -14,6 +14,7 @@
         <module>spring-boot-mybatis-xml</module>
         <module>spring-boot-profiles</module>
         <module>spring-boot-jpa-thymeleaf</module>
+        <module>spring-boot-mybatis-mulidatasource</module>
     </modules>
 
 
