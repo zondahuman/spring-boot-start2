@@ -38,9 +38,9 @@ public class ProductRepositoryTest {
         product.setDescription(PRODUCT_DESCRIPTION);
         product.setImageUrl(IMAGE_URL);
         product.setPrice(BIG_DECIMAL_100);
-//        product.setCreateTime(new Date());
-//        product.setUpdateTime(new Date());
-//        product.setFlag(Boolean.TRUE);
+        product.setCreateTime(new Date());
+        product.setUpdateTime(new Date());
+        product.setFlag(Boolean.TRUE);
         //when
         productRepository.save(product);
 
