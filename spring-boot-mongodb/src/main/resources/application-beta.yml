@@ -11,7 +11,8 @@ spring :
           name : spirng-boot-mongodb
       data :
           mongodb :
-              uri : mongodb://172.16.2.133:27017/trade
+              uri : mongodb://172.16.2.132:27017,172.16.2.133:27018,172.16.2.134:27017/trade
+#              uri : 172.16.2.133:27017/trade
 
 
 
