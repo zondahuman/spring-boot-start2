@@ -3,6 +3,7 @@ package com.abin.lee.spring.boot.cassandra.test;
 import com.abin.lee.spring.boot.common.HttpClientUtil;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.RandomUtils;
+import org.apache.http.Consts;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
@@ -42,7 +43,7 @@ public class AnnotationUpdateTest {
 //            httpPost.setHeader("Cookie", getCookie());
 //            httpPost.setHeader("Cookie", "JSESSIONID=7588C522A6900BFD581AA18FDA64D347");
 
-            httpPost.setEntity(new UrlEncodedFormEntity(nvps, HTTP.UTF_8));
+            httpPost.setEntity(new UrlEncodedFormEntity(nvps, Consts.UTF_8));
             System.out.println("Executing request: " + httpPost.getRequestLine());
             HttpResponse response = httpClient.execute(httpPost);
             System.out.println("----------------------------------------");
