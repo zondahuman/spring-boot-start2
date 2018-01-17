@@ -21,6 +21,9 @@ public class ProductFormToProduct implements Converter<ProductForm, Product> {
         product.setDescription(productForm.getDescription());
         product.setPrice(productForm.getPrice());
         product.setImageUrl(productForm.getImageUrl());
+        product.setCreateTime(productForm.getCreateTime());
+        product.setUpdateTime(productForm.getUpdateTime());
+        product.setFlag(productForm.isFlag());
         return product;
     }
 }

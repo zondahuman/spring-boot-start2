@@ -7,11 +7,14 @@ import org.springframework.data.cassandra.core.mapping.Table;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.util.Date;
 import java.util.UUID;
+
 
 /**
  * Created by jt on 1/10/17.
  */
+
 @Table("products")
 public class Product implements Serializable{
 
@@ -21,6 +24,9 @@ public class Product implements Serializable{
     private String description;
     private BigDecimal price;
     private String imageUrl;
+    private boolean flag;
+    private Date createTime;
+    private Date updateTime;
 
     public UUID getId() {
         return id;
@@ -56,5 +62,29 @@ public class Product implements Serializable{
 
     public Product() {
         id = UUID.randomUUID();
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
+    }
+
+    public boolean isFlag() {
+        return flag;
+    }
+
+    public void setFlag(boolean flag) {
+        this.flag = flag;
     }
 }

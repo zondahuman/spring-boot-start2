@@ -9,4 +9,5 @@ public class SpringBootCassandraApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootCassandraApplication.class, args);
 	}
+
 }

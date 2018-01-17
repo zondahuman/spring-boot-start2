@@ -59,4 +59,10 @@ public class ProductServiceImpl implements ProductService {
         System.out.println("Saved Product Id: " + savedProduct.getId());
         return savedProduct;
     }
+
+    @Override
+    public void update(UUID id) {
+        Product product = this.getById(id);
+        this.productRepository.save(product);
+    }
 }

@@ -16,24 +16,24 @@ import java.util.List;
 @Configuration
 public class CassandraConfig extends AbstractCassandraConfiguration {
 
-    public static final String KEYSPACE = "guru_keyspace";
+    public static final String KEYSPACE = "lee_keyspace";
 
     @Override
     public SchemaAction getSchemaAction() {
         return SchemaAction.CREATE_IF_NOT_EXISTS;
     }
 
-    @Override
-    protected List<CreateKeyspaceSpecification> getKeyspaceCreations() {
-        CreateKeyspaceSpecification specification = CreateKeyspaceSpecification.createKeyspace(KEYSPACE);
+//    @Override
+//    protected List<CreateKeyspaceSpecification> getKeyspaceCreations() {
+//        CreateKeyspaceSpecification specification = CreateKeyspaceSpecification.createKeyspace(KEYSPACE);
+//
+//        return Arrays.asList(specification);
+//    }
 
-        return Arrays.asList(specification);
-    }
-
-    @Override
-    protected List<DropKeyspaceSpecification> getKeyspaceDrops() {
-        return Arrays.asList(DropKeyspaceSpecification.dropKeyspace(KEYSPACE));
-    }
+//    @Override
+//    protected List<DropKeyspaceSpecification> getKeyspaceDrops() {
+//        return Arrays.asList(DropKeyspaceSpecification.dropKeyspace(KEYSPACE));
+//    }
 
     @Override
     protected String getKeyspaceName() {

@@ -1,4 +1,4 @@
-package com.abin.lee.spring.boot.mybatis.test;
+package com.abin.lee.spring.boot.cassandra.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

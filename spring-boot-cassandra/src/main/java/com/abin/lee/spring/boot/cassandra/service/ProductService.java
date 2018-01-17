@@ -21,4 +21,6 @@ public interface ProductService {
     void delete(UUID id);
 
     Product saveOrUpdateProductForm(ProductForm productForm);
+
+    void update(UUID id);
 }
